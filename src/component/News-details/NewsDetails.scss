@@ -1,0 +1,83 @@
+$maincolor:#fff ;
+$secandColor:#b82924;
+$fourthColor: #f11008;
+$therdColor: #121212;
+$fiftColor: rgba(0, 0, 0, 0.1);
+$mainFont:'Dancing Script', cursive ;
+
+
+.card-details{
+    display:flex;
+    height: 85vh;
+    width: 100%;
+    margin: auto;
+    justify-content:center;
+    align-items:center;  
+    background-color: $therdColor;
+
+    .card{
+        border-radius: 25px !important;
+        width: 90%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .card-body{
+    
+            h4{
+                font-size: 2rem !important;
+                font-weight: 900;
+                line-height: 23px;
+                font-family: $mainFont !important;
+            }
+            .card-title{
+                font-size: 1.3rem;
+            }
+           
+            p{
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: $therdColor;
+            }
+            a{
+                color: $therdColor;
+                font-size: 1.2rem;
+                i{
+                    color:$fourthColor;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
+@media(max-width:575.98px){
+
+    .card-details{
+        height: auto;
+    
+        .card{
+            width: 90%;
+            .card-body{
+                h4{
+                    font-size: 2rem !important;
+                }
+                .card-title{
+                    font-size: 1.7rem !important;
+                }
+                h5{
+                    font-size: 1rem !important;
+                    margin: 20px !important;
+                }
+                a{
+                    font-size: 1.0rem !important;                  
+                }
+            }
+        }
+        
+    }
+    
+}

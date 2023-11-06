@@ -1,0 +1,166 @@
+$maincolor:#fff ;
+$secandColor:#b82924;
+$fourthColor: #f11008;
+$therdColor: #121212;
+$fiftColor:#1212125d;
+$mainFont:'Dancing Script', cursive ;
+
+
+@mixin fonts ( $font, $weight:600 , $line:23px ,$color){
+    font-size: $font !important;
+    font-weight:$weight !important;
+    line-height: $line !important;
+    color: $color !important;
+}
+
+
+// .w-90{
+//     // width: 100% !important;
+//     margin: 0px 100px auto !important;
+//     background-color: aqua;
+// }
+.bg-color{
+    background-color: $therdColor !important;
+}
+
+nav{
+  z-index: 9999999999999999999999999999999 !important;
+    padding: 10px 0 !important;
+    .navbar-toggler{
+      border-color: rgba(245, 245, 245, 0.582) !important;
+      .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    }
+    a{
+        @include fonts(37px,400 ,20px , $color:$fourthColor );
+        font-family: $mainFont;
+    }
+    ul{
+        li{
+            padding: 0 5px !important;
+            a{
+                @include fonts(25px,700 , 29px,$color:#fff  );
+                padding: 20px;
+            }
+            a:hover{
+                color: $fourthColor !important;
+                border-bottom: 1px solid whitesmoke;
+            }
+        }
+    }
+
+    aside::before{
+        content: "  ";
+        width: 0.8px !important;
+        padding: 20px 0 !important;
+        margin: 1px 30px !important;
+        background-color: $fourthColor !important;
+    }
+
+    div{
+        select{
+
+            @include fonts(17px,600 ,20px ,$fourthColor )
+        }
+        select:hover{
+            color: $secandColor !important;
+        }
+
+        .switch-name {
+            // --dark-sky: #5050e5;
+            // --moon: #ffd365;
+            // --light-sky: #35d5e5;
+            // --sun: #ffed89;
+
+            --dark-sky: #f1100f;
+            --moon: #fff;
+            --light-sky: #fff;
+            --sun:#f11008 ;
+            
+            display: inline-block;
+            position: relative;
+            border-radius: 5em;
+            cursor: pointer;
+            width: 60px;
+            height: 30px;
+            overflow: hidden;
+            transition: all .5s;
+          }
+          
+          .switch-name .back {
+            background-color: var(--dark-sky);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: .5s ease-in-out;
+          }
+          
+          .switch-name .checkbox {
+            opacity: 0;
+          }
+          
+          .switch-name .checkbox:checked ~ .back {
+            background-color: var(--light-sky);
+          }
+          
+          .switch-name .checkbox:checked ~ .moon {
+            transform: translate(100%) rotate(180deg);
+            opacity: 0;
+          }
+          
+          .switch-name .checkbox:checked ~ .sun {
+            transform: translate(100%) rotate(180deg);
+            opacity: 1;
+          }
+          
+          .switch-name .moon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            padding: .4em;
+            fill: var(--moon);
+            transition: .5s;
+          }
+          
+          .switch-name .sun {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            padding: .4em;
+            fill: var(--sun);
+            transition: .5s;
+            opacity: 0;
+          }
+    }
+    .active{
+        color: $fourthColor !important;
+        border-bottom: 1px solid whitesmoke;
+    }
+    
+}
+
+
+@media (max-width: 575.98px) {
+
+  nav{
+    .bg-color{
+     
+      .nav-item{
+        text-align: center;
+      }
+      aside::before{        
+        width: 0px !important;
+        margin: 0 20px !important;
+      }
+    }
+  }
+
+  
+
+  
+}

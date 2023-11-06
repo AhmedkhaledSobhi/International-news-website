@@ -1,0 +1,60 @@
+.card-details {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+.card-details .card {
+  border-radius: 25px !important;
+  width: 90%;
+}
+.card-details .card img {
+  height: 100%;
+  width: 100%;
+}
+.card-details .card .card-body h4 {
+  font-size: 2rem !important;
+  font-weight: 900;
+  line-height: 23px;
+  font-family: "Dancing Script", cursive !important;
+}
+.card-details .card .card-body .card-title {
+  font-size: 1.3rem;
+}
+.card-details .card .card-body p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #121212;
+}
+.card-details .card .card-body a {
+  color: #121212;
+  font-size: 1.2rem;
+}
+.card-details .card .card-body a i {
+  color: #f11008;
+}
+
+@media (max-width: 575.98px) {
+  .card-details {
+    height: auto;
+  }
+  .card-details .card {
+    width: 90%;
+  }
+  .card-details .card .card-body h4 {
+    font-size: 2rem !important;
+  }
+  .card-details .card .card-body .card-title {
+    font-size: 1.7rem !important;
+  }
+  .card-details .card .card-body h5 {
+    font-size: 1rem !important;
+    margin: 20px !important;
+  }
+  .card-details .card .card-body a {
+    font-size: 1rem !important;
+  }
+}/*# sourceMappingURL=NewsDetails.css.map */
