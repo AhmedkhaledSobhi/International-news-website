@@ -29,6 +29,7 @@ return (
           <section className='pt-3' dir={`${lang=="en"?'ltr':'rtl'}`}>
             <Routes>
               <Route path='/' element={<Home/>}/>
+              <Route path='International-news-website' element={<Home/>}/>
               <Route path='home' element={<Home/>}/>
               <Route path='sports' element={<Sports/>}/>
               <Route path='health' element={<Health/>}/>
