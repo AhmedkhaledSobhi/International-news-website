@@ -31,10 +31,7 @@ export default function Health(){
 
       getNewsHealth();
 
-      return () => {
-        
-      }
-    }, [ ])
+    }, [reduxCountry])
     
 
 

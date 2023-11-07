@@ -32,9 +32,8 @@ export default function Technology() {
 
     getNewsTecnologe();
 
-    return () => {
-    }
-  }, [])
+  
+  }, [countrys])
 
 
 

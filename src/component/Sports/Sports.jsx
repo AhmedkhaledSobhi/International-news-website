@@ -31,10 +31,7 @@ export default function Sports(){
 
      gitNewsSports();
 
-      return () => {
-        
-      }
-  }, []);
+  }, [reduxCountry]);
 
 
   return(

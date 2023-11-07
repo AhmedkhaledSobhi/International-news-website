@@ -26,10 +26,8 @@ export default function Business(){
     useEffect(() => {
       getNewsBusiness();
     
-      return () => {
-        
-      }
-    }, [])
+   
+    }, [reduxCountry])
     
 
 

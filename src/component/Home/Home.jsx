@@ -42,12 +42,10 @@ export default function Home() {
 
 
   useEffect(() => {
-    getNews();
-    return () => {
 
-    }
+    getNews();
     
-  }, [])
+  }, [reduxCountry])
   
  
 // ===============================================================================================

@@ -34,12 +34,8 @@ export default function Entertainment(){
     useEffect(() => {
 
       getNews();
-
-      return () => {
-  
-      }
       
-    }, [])
+    }, [reduxCountry])
     
    
   // ===============================================================================================

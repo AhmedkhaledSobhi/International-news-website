@@ -28,10 +28,7 @@ export default function Science() {
 
     getNews();
 
-    return () => {
-
-    }
-  }, [])
+  }, [reduxCountry])
 
 
   return (
